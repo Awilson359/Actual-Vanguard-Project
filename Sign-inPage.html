@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Sign-inPage.css" rel="stylesheet" type="text/css" />
     <title>VanGuard Sign-In Page</title>
 </head>
 <body>
-    
+    <img class = "vanguard-image"src = "VanguardLogo.png" alt = "VanguardLogo" width = "384" height = "216">
+    <div class = "center-text">
+        <label for = "UsernameBox" >Username</label>
+        <input type = "text" name = "Username" id = "UsernameBox" />
+    </div>
+    <button class="button-33" role="button" onclick="getInputValue()">Login</button>
+    <script>
+        function getInputValue() { 
+        let inputVal = document.getElementById("UsernameBox").value;
+        alert(inputVal);
+        }
+    </script>
 </body>
 </html>
